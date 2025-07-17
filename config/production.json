@@ -1,0 +1,57 @@
+{
+  "bot": {
+    "mode": "production"
+  },
+  
+  "strategies": {
+    "arbitrage": {
+      "enabled": true,
+      "minProfitETH": "0.005",
+      "minProfitBps": 15,
+      "scanInterval": 500
+    },
+    
+    "sandwich": {
+      "enabled": false,
+      "minVictimTxValue": "5",
+      "maxPositionSize": "10"
+    },
+    
+    "liquidation": {
+      "enabled": true,
+      "minProfitETH": "0.02",
+      "healthFactorThreshold": 1.03,
+      "scanInterval": 3000
+    },
+    
+    "flashloan": {
+      "enabled": true,
+      "minProfitETH": "0.02"
+    }
+  },
+  
+  "risk": {
+    "maxPositionETH": "20",
+    "maxDailyLossETH": "2",
+    "maxGasGwei": "150",
+    "minProfitRatio": 2.0,
+    "maxRiskScore": 6
+  },
+  
+  "monitor": {
+    "minTransactionValue": "0.5",
+    "highValueThreshold": "20"
+  },
+  
+  "logging": {
+    "level": "info",
+    "file": {
+      "enabled": true,
+      "maxSize": "50m",
+      "maxFiles": 20
+    },
+    "console": {
+      "enabled": false
+    }
+  }
+}

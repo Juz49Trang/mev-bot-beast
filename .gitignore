@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build
+dist/
+build/
+coverage/
+.next/
+
+# Hardhat
+artifacts/
+cache/
+typechain/
+typechain-types/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Testing
+coverage.json
+
+# Misc
+.temp/
+.cache/
+*.pem
+
+# Database
+*.sqlite
+*.db
+
+# Private keys - NEVER commit these!
+wallets/
+keys/
